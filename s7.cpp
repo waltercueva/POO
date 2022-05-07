@@ -110,10 +110,10 @@ public:
 			cout << instrumentos[i]->toString()<<"\n";
 	}
 };
-class Controlador {
+class Controller {
 	Instrumentos coleccion;
 public:
-	Controlador() { ingresar();imprimir(); }
+	Controller() { ingresar();imprimir(); }
 	void ingresar() {
 		for(size_t i=0;i<3;++i)
 		coleccion.insercionManual();
@@ -123,9 +123,7 @@ public:
 	}
 };
 int main() {	
-	Controlador c;//implicita	
-	//Controlador* c1=new Controlador();//explicita
-
+	Controller c;//implicita	
 	cin.ignore();
 	cin.get();
 	return 0;
